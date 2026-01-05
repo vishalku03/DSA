@@ -1,7 +1,4 @@
-
-# DSA
-
-# 📘 Data Structures & Algorithms (DSA)
+# Data Structures & Algorithms (DSA)
 
 This repository contains **topic-wise implementations of Data Structures and Algorithms in C++**.
 It is designed to help anyone **understand core DSA concepts clearly** and prepare effectively for **coding interviews**.
@@ -10,7 +7,7 @@ All topics are organized in **separate folders** for easy navigation, learning, 
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 - **Array** – Basic to advanced array problems
 - **String** – Common string manipulation techniques
@@ -23,7 +20,7 @@ Each folder contains **clean, well-written C++ code** focused on logic and clari
 
 ---
 
-## 🎯 Purpose of This Repository
+## Purpose of This Repository
 
 - Build strong **DSA fundamentals**
 - Practice **problem-solving skills**
@@ -32,16 +29,16 @@ Each folder contains **clean, well-written C++ code** focused on logic and clari
 
 ---
 
-## 🛠 Language Used
-- **C++**
+##  Work Ownership
+
+> **All the code in this repository is written and maintained by me.**  
+> Each implementation is created from scratch with a focus on clarity, correctness, and understanding of core concepts.
 
 ---
 
-## 🚀 How to Use
+## 🛠 Language Used
+- **C++**
 
-1. Open any topic folder
-2. Read the code file
-3. Run using:
-   ```bash
+
    g++ filename.cpp
    ./a.out
