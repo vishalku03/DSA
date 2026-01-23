@@ -39,6 +39,3 @@ Each folder contains **clean, well-written C++ code** focused on logic and clari
 ## 🛠 Language Used
 - **C++**
 
-
-   g++ filename.cpp
-   ./a.out
