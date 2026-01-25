@@ -24,3 +24,24 @@ public:
           return (n & 1) ? 0 : fun(n, 0);
      }
 };
+
+/*Minimum Difference Between Highest and Lowest of K Scores*/
+
+#include<bits/stdc++.h>
+using namespace std;
+class Solution
+{
+public:
+     int minimumDifference(vector<int> &nums, int k)
+     {
+          sort(nums.begin(), nums.end());
+          int n = nums.size();
+          int length = 1e5;
+          for (int i = k - 1; i < n; i++)
+          {
+               length = min(length, nums[i] - nums[max(0, i - k + 1)]);
+          }
+
+          return length;
+     }
+};
