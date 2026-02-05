@@ -37,3 +37,26 @@ int main()
      cout << sol.maxOnes(arr, k) << endl; // Output: 6
      return 0;
 }
+
+/*3379. Transformed Array*/
+
+#include<bits/stdc++.h>
+using namespace std;
+class Solution
+{
+public:
+     vector<int> constructTransformedArray(vector<int> &nums)
+     {
+          int n = nums.size();
+          vector<int> ans(n);
+
+          for (int i = 0; i < n; i++)
+          {
+               int TargetIndx = ((i + nums[i]) % n + n) % n;
+
+               ans[i] = nums[TargetIndx];
+          }
+
+          return ans;
+     }
+};
