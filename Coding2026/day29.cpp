@@ -44,3 +44,41 @@ public:
           return root;
      }
 };
+
+/*Koko Eating Bananas*/
+
+#include<bits/stdc++.h>
+using namespace std;
+class Solution
+{
+public:
+     int kokoEat(vector<int> &arr, int k)
+     {
+          int low = 1;
+          int high = *max_element(arr.begin(), arr.end());
+          int answer = high;
+
+          while (low <= high)
+          {
+               int mid = low + (high - low) / 2;
+               long long hours = 0;
+
+               for (int bananas : arr)
+               {
+                    hours += (bananas + mid - 1) / mid; // ceil division
+               }
+
+               if (hours <= k)
+               {
+                    answer = mid;   // possible answer
+                    high = mid - 1; // try smaller speed
+               }
+               else
+               {
+                    low = mid + 1; // need higher speed
+               }
+          }
+
+          return answer;
+     }
+};
