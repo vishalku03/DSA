@@ -1,7 +1,11 @@
 
 /* Remove K Digits */
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<stack>
+#include<string>
+#include<algorithm>
+
 using namespace std;
 
 class Solution
